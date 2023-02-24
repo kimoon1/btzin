@@ -1,0 +1,62 @@
+/* 폰트 import */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Do+Hyeon&family=Jacques+Francois&family=Jost&family=Merriweather&family=Nanum+Myeongjo&family=Noto+Sans+KR&family=Old+Standard+TT&family=Playfair+Display+SC&family=Roboto&display=swap');
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Tenada';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Tenada.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Tenada', sans-serif;
+
+}
+
+h1,h2,h3,h4,h5,p,address {
+    padding: 0;
+    margin: 0;
+}
+
+ul,li {
+    list-style: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden !important;
+    background-color: #2c2c2c;
+
+}
+
+/* 모바일 PC 한쪽에서만 보일 요소 none 처리 */
+.mobile-only {
+    display: none !important;
+}
+
+@media screen and (max-width:768px) {
+    body {
+        width: 100%;
+    }
+    .pc-only {
+        display: none !important;
+    }
+
+    .mobile-only {
+        display: block !important;
+    }
+}
